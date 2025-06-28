@@ -1,0 +1,37 @@
+### Criar Ordem 1
+POST http://localhost:8000/order HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "id":"001",
+  "price": 101.5,
+  "tax": 0.5
+}
+
+### Criar Ordem 2
+POST http://localhost:8000/order HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "id":"002",
+  "price": 110.5,
+  "tax": 0.2
+}
+
+### Criar Ordem 3
+POST http://localhost:8000/order HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
+
+{
+  "id":"003",
+  "price": 120.5,
+  "tax": 0.3
+}
+
+### Listar todas as ordens
+GET http://localhost:8000/order HTTP/1.1
+Host: localhost:8000
+Content-Type: application/json
